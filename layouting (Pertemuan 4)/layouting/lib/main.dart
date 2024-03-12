@@ -49,7 +49,63 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-       
+        Container(
+          margin: EdgeInsets.all(30),
+          padding: EdgeInsets.all(20),
+          decoration: BoxDecoration(
+               borderRadius: BorderRadius.circular(10),
+               color: Color(0xffFEF4F3)
+             ),
+
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text("Data Diri", style: TextStyle(
+                   color: Colors.pinkAccent,
+                   fontWeight: FontWeight.bold
+                 ),),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                     Text("Nama "),
+                     Text("Puspita")
+                   ],
+                  
+                 ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Kelas "),
+                     Text("TI 1")
+                   ],
+                 ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Program Studi"),
+                     Text("Teknik Informatika")
+                   ],
+                 ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Dosen Wali "),
+                     Text("NAP")
+                   ],
+                 ),
+                 Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Angkatan "),
+                     Text("2021")
+                   ],
+                 )
+
+
+
+
+          ]
+        ),)
           
         ],
       ),)
