@@ -18,7 +18,8 @@ class MyApp extends StatelessWidget {
         leading: Icon(Icons.arrow_back),
         backgroundColor: Colors.red,
       ),body: ListView(
-        children: [Container(
+        children: [
+          Container(
           height: 250,
           color: Color.fromARGB(255, 255, 85, 85),
           child: Column(
@@ -49,7 +50,7 @@ class MyApp extends StatelessWidget {
             ],
           ),
         ),
-        Container(
+          Container(
           margin: EdgeInsets.all(30),
           padding: EdgeInsets.all(20),
           decoration: BoxDecoration(
@@ -105,10 +106,44 @@ class MyApp extends StatelessWidget {
 
 
           ]
-        ),)
-          
+        ),),
+          Container(
+            margin: EdgeInsets.all(30),
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+                 borderRadius: BorderRadius.circular(10),
+                 color: Color(0xffFEF4F3)
+             ),
+             child: Column(
+crossAxisAlignment: CrossAxisAlignment.start,
+children: [
+  Text("Pusat Bantuan", style: TextStyle(
+                   fontWeight: FontWeight.bold,
+                   color: Colors.pinkAccent
+                 ),),
+                                  Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Bantuan"),
+                     Image.asset("assets/682055.png",scale: 15)
+                   ],
+                 ),
+                 SizedBox(height: 15,),
+Row(
+                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                   children: [
+                     Text("Laporkan Masalah"),
+                     Image.asset("assets/10266358.png",scale: 14)
+                   ],
+                 ),
+],
+
+             ),
+
+          )
         ],
-      ),)
+      ),
+      )
     );
   }
 }
