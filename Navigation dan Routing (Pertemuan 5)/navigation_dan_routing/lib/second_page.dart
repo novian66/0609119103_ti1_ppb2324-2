@@ -8,13 +8,18 @@ class SecondPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Second Page'),
+        backgroundColor: const Color.fromARGB(255, 54, 136, 244),
       ),
-    body: Center(
-      child: ElevatedButton(
-        onPressed: () {},
+      body: Center(
+              child: ElevatedButton(
+        onPressed: () {
+          Navigator.pop(context);
+        },
         child: const Text('Kembali'),
       ),
 
+      ),
+      
     );
   }
 }
