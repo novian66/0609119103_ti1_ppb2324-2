@@ -13,6 +13,7 @@ class SecondPage extends StatelessWidget {
       ),
       body: Center(
               child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(data ?? '', style: const TextStyle(fontSize: 20.0),),
                   ElevatedButton(

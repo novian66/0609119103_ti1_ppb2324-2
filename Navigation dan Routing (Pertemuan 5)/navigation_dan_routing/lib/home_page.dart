@@ -13,17 +13,29 @@ class HomePage extends StatelessWidget {
         backgroundColor: const Color.fromARGB(255, 54, 136, 244),
       ),
             body: Center(
-        child: ElevatedButton(
-          onPressed: () {
-                  Navigator.push(
-        context,
-        MaterialPageRoute(
-          builder: (context) => const SecondPage(data: 'Data dari Home Page',),
-        ),
-      );
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ElevatedButton(
+              onPressed: () {
+                      Navigator.push(
+            context,
+            MaterialPageRoute(
+              builder: (context) => const SecondPage(data: 'Data dari Home Page',),
+            ),
+                  );
+            
+              },
+              child: const Text('Menuju halaman kedua'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/second_page');
+              },
+              child: const Text('Menuju halaman kedua dengan route'),
+            ),
 
-          },
-          child: const Text('Menuju halaman kedua'),
+          ],
         ),
       ),
 
